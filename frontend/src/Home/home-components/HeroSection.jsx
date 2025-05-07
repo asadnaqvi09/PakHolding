@@ -16,7 +16,7 @@ const HeroSection = () => {
         </div>
         <div className="hero-mobile-content">
           <h1 className="hero-mobile-title">
-            Transforming <span className="hero-mobile-title-line">Investments into</span>
+            Transforming <span className="hero-mobile-title-line">Investments intosssssssss</span>
             <span className="hero-mobile-title-line">Exceptional</span>
             <span className="hero-mobile-title-line">Experiences</span>
           </h1>
