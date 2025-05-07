@@ -1,0 +1,123 @@
+/* Base Styles (Desktop) */
+.testimonial-section {
+  padding: 4rem 1rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.weblogo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.logo-image {
+  height: 2rem;
+  margin-right: 0.75rem;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.testimonial-swiper {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.testimonial-content {
+  padding: 0 20%;
+  box-sizing: border-box;
+}
+
+.testimonial-quote {
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.testimonial-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.testimonial-image {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.testimonial-author {
+  font-weight: bold;
+}
+
+.author-name {
+  font-size: 1.125rem;
+  margin-bottom: 0.25rem;
+}
+
+.author-position {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Navigation Arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 1.5rem !important;
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .testimonial-section {
+    padding: 2rem 1rem;
+  }
+  
+  .logo-container {
+    margin-bottom: 2rem;
+  }
+  
+  .logo-image {
+    height: 1.5rem;
+  }
+  
+  .logo-text {
+    font-size: 1.25rem;
+  }
+  
+  .testimonial-content {
+    padding: 0 1rem;
+  }
+  
+  .testimonial-quote {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .testimonial-image {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  
+  .author-name {
+    font-size: 1rem;
+  }
+  
+  .author-position {
+    font-size: 0.875rem;
+  }
+}

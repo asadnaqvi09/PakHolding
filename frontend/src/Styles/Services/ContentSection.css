@@ -1,0 +1,123 @@
+/* Base styles (mobile first) */
+.content-section {
+    background-color: #0D9161;
+    color: white;
+    padding: 2rem 1rem;
+  }
+  
+  .content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .content-header {
+    margin-bottom: 2rem;
+  }
+  
+  .content-heading {
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+  
+  .content-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .content-paragraph {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .content-divider {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 1.5rem 0;
+  }
+  
+  .table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .data-table tr {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .data-table tr:last-child {
+    border-bottom: none;
+  }
+  
+  .data-label {
+    font-size: 0.875rem;
+    padding-right: 1rem;
+  }
+  
+  .data-value {
+    font-size: 0.875rem;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  /* Medium screens (768px and up) */
+  @media (min-width: 768px) {
+    .content-section {
+      padding: 3rem 2rem;
+    }
+  
+    .content-container {
+      display: flex;
+      gap: 3rem;
+    }
+  
+    .content-header {
+      flex: 1;
+      margin-bottom: 0;
+      /* position: sticky; */
+      top: 2rem;
+      align-self: flex-start;
+    }
+  
+    .content-heading {
+      font-size: 2rem;
+    }
+  
+    .content-body {
+      flex: 1;
+    }
+  
+    .content-divider {
+      margin: 2rem 0;
+    }
+  
+    .data-table tr {
+      padding: 1rem 0;
+    }
+  }
+  
+  /* Large screens (1024px and up) */
+  @media (min-width: 1024px) {
+    .content-heading {
+      font-size: 2.5rem;
+    }
+    
+    .content-paragraph {
+      font-size: 1.125rem;
+    }
+    
+    .data-label,
+    .data-value {
+      font-size: 1rem;
+    }
+  }

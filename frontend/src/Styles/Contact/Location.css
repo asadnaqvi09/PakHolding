@@ -1,0 +1,100 @@
+/* Base styles (medium screens and up) */
+.locations-section {
+    background-color: white;
+    color: black;
+    max-width: 56rem;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+  }
+  
+  .locations-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .locations-subtitle {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #4b5563;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+  }
+  
+  .locations-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 0.75rem;
+  }
+  
+  .locations-description {
+    font-size: 0.875rem;
+    color: #4b5563;
+    max-width: 32rem;
+    margin: 0 auto;
+  }
+  
+  .locations-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  
+  .location-card {
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .location-map {
+    height: 12rem;
+    width: 100%;
+  }
+  
+  .location-info {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .location-name {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+  
+  .location-address {
+    font-size: 0.875rem;
+    color: #4b5563;
+    margin-bottom: 0.5rem;
+  }
+  
+  .location-link {
+    font-size: 0.875rem;
+    color: #111827;
+    transition: color 0.2s ease;
+  }
+  
+  .location-link:hover {
+    color: #374151;
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    .locations-section {
+      padding: 2rem 1rem;
+    }
+  
+    .locations-title {
+      font-size: 1.25rem;
+    }
+  
+    .locations-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  
+    .location-map {
+      height: 10rem;
+    }
+  }

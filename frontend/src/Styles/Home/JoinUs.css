@@ -1,0 +1,100 @@
+/* Base Styles (Desktop) */
+.join-us-section {
+  padding: 4rem 1rem;
+  background-color: #001f17;
+  color: white;
+}
+
+.join-us-container {
+  max-width: 72rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* Text Section */
+.text-section {
+  flex: 1;
+  text-align: left;
+}
+
+.section-heading {
+  font-size: 1.875rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.section-description {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Buttons Section */
+.buttons-section {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.primary-button {
+  border-radius: 12px; /* Tailwind's rounded-[12px] */
+  border: 1.5px solid #0d9161; /* Tailwind's border-t-[1.5px] border-r-[1.5px] border-l-[1.5px] border-[#0D9161] */
+  border-bottom: 4px solid #0d9161; /* Tailwind's border-b-[4px] */
+  background-color: #11b67a; /* Tailwind's bg-[#11B67A] */
+  color: #ffffff; /* Tailwind's text-white */
+  font-weight: 500; /* Tailwind's font-medium */
+  transition: background-color 300ms; /* Tailwind's transition-colors duration-300 */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.75rem 1.5rem;
+}
+
+.primary-button:hover {
+  background-color: #0d9161;
+}
+
+.secondary-button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 4px solid rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+  color: #ffffff;
+  font-weight: 500;
+  transition: background-color 300ms;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.secondary-button:hover {
+  background-color: #0d9161; /* Tailwind's hover:bg-black */
+  color: #ffffff;
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .join-us-section {
+    padding: 3rem 1rem;
+  }
+
+  .join-us-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .text-section {
+    text-align: center;
+  }
+
+  .section-heading {
+    font-size: 1.5rem;
+  }
+
+  .buttons-section {
+    justify-content: center;
+  }
+}

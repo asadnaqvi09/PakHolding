@@ -1,0 +1,115 @@
+/* Base styles (medium screens and up) */
+.recognitions-section {
+    background-color: #002E25;
+    color: white;
+    padding: 5rem 3rem;
+  }
+  
+  .recognitions-container {
+    max-width: 80rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  
+  .recognitions-content {
+    flex: 1;
+  }
+  
+  .recognitions-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  
+  .recognitions-description {
+    font-size: 1.125rem;
+    color: #D1D5DB;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .recognitions-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .primary-button {
+    border: 1px solid white;
+    border-radius: 0.375rem;
+    padding: 0.5rem 1.25rem;
+    background-color: transparent;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .primary-button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .secondary-button {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    background: transparent;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .secondary-button:hover {
+    text-decoration: underline;
+  }
+  
+  .awards-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 3rem;
+  }
+  
+  .award-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .award-icon {
+    font-size: 1.5rem;
+    color: white;
+  }
+  
+  .award-name {
+    font-weight: 500;
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    .recognitions-section {
+      padding: 3rem 1.5rem;
+    }
+  
+    .recognitions-container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .recognitions-title {
+      font-size: 1.875rem;
+    }
+  
+    .recognitions-description {
+      font-size: 1rem;
+    }
+  
+    .awards-container {
+      justify-content: center;
+      width: 100%;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+  }

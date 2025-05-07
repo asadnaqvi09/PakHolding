@@ -1,0 +1,128 @@
+/* Base styles (medium screens and up) */
+.contact-section {
+    background-color: white;
+    color: black;
+    padding: 5rem 4rem;
+  }
+  
+  .contact-container {
+    max-width: 80rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .contact-header {
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-subtitle {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #374151;
+  }
+  
+  .contact-title {
+    font-size: 1.875rem;
+    font-weight: 600;
+    margin-top: 0.25rem;
+  }
+  
+  .contact-intro {
+    color: #4b5563;
+    margin-top: 0.5rem;
+  }
+  
+  .contact-method {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  
+  .contact-icon {
+    font-size: 1.5rem;
+    margin-top: 0.25rem;
+  }
+  
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-method-title {
+    font-weight: 600;
+  }
+  
+  .contact-method-description {
+    font-size: 0.875rem;
+    color: #4b5563;
+    margin-top: 0.125rem;
+  }
+  
+  .contact-link {
+    font-size: 0.875rem;
+    color: #2563eb;
+    text-decoration: underline;
+    margin-top: 0.25rem;
+  }
+  
+  .location-button {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: black;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-top: 0.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .location-button:hover {
+    text-decoration: underline;
+  }
+  
+  .map-placeholder {
+    width: 100%;
+    height: 20rem;
+    background-color: #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .map-icon {
+    font-size: 3rem;
+    color: #9ca3af;
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    .contact-section {
+      padding: 3rem 1.5rem;
+    }
+  
+    .contact-container {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  
+    .contact-title {
+      font-size: 1.5rem;
+    }
+  
+    .map-placeholder {
+      height: 16rem;
+      order: -1; /* Moves map to top on mobile */
+    }
+  }

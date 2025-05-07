@@ -1,0 +1,130 @@
+/* Base styles (medium screens and up) */
+.contact-container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+  }
+  
+  .contact-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .contact-subtitle {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4b5563;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-description {
+    font-size: 1rem;
+    color: #4b5563;
+  }
+  
+  .contact-methods {
+    display: flex;
+    gap: 2rem;
+    color: #000;
+  }
+  
+  .contact-card {
+    flex: 1;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .contact-card:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .contact-icon {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.75rem;
+  }
+  
+  .contact-card-text {
+    font-size: 1rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  .contact-link {
+    font-weight: 500;
+    color: inherit;
+    transition: color 0.2s ease;
+  }
+  
+  .contact-link:hover {
+    color: #3b82f6;
+  }
+  
+  .contact-address {
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.5;
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    .contact-container {
+      padding: 2rem 1rem;
+    }
+  
+    .contact-header {
+      margin-bottom: 2rem;
+    }
+  
+    .contact-subtitle {
+      font-size: 0.875rem;
+    }
+  
+    .contact-title {
+      font-size: 1.5rem;
+    }
+  
+    .contact-description {
+      font-size: 0.875rem;
+    }
+  
+    .contact-methods {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .contact-card {
+      padding: 1.25rem;
+    }
+  
+    .contact-icon {
+      font-size: 2rem;
+    }
+  
+    .contact-card-title {
+      font-size: 1.125rem;
+    }
+  
+    .contact-card-text {
+      font-size: 0.875rem;
+    }
+  }

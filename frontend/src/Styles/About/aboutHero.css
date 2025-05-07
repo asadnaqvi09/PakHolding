@@ -1,0 +1,109 @@
+/* Base Styles */
+.aboutHero {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-banner {
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+
+.hero-image-container {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.hero-title {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-bottom: 2rem;
+  max-width: 42rem;
+}
+
+.about-content {
+  padding: 2rem 1rem;
+}
+
+.content-header {
+  margin-bottom: 1rem;
+}
+
+.content-subtitle {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.content-title {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.title-highlight {
+  display: inline-block;
+}
+
+.content-description {
+  margin-bottom: 1.5rem;
+}
+
+.secondary-button {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: 1px solid #333;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .hero-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .content-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
