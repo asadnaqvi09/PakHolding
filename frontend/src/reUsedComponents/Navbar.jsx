@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/images/CompanyLogo.png";
+import logo from "../../public/CompanyLogo.png"; // Adjust the path as necessary
 import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -15,12 +15,6 @@ function Navbar() {
     { name: "Our Services", path: "/services" },
     { name: "Contact Us", path: "/contact" },
   ];
-
-  const bgClasses = {
-    green: 'bg-green-900 text-white',
-    white: 'bg-white text-gray-900 shadow-sm',
-    black: 'bg-black text-white'
-  };
 
   return (
     <div className="flex justify-between items-center py-4 px-8 bg-green-900 shadow-md relative">
@@ -51,34 +45,33 @@ function Navbar() {
 
       {/* Right Section */}
       <div className="hidden md:flex items-center space-x-4">
-        <button className="px-6 py-2 rounded-[12px] border border-white/20 border-b-4 font-medium text-white bg-transparent hover:bg-[#0d9161] transition-colors duration-300">
+        <button className="px-6 py-2 rounded-[12px] border border-white/20 border-b-4 font-medium text-white bg-transparent hover:bg-[#0d9161] transition-colors duration-300 cursor-pointer text-center">
           Join
         </button>
-        <button className="px-6 py-2 rounded-[12px] border-t-[1.5px] border-r-[1.5px] border-l-[1.5px] border-b-[4px] border-[#0d9161] bg-[#11B67A] text-white font-medium hover:bg-[#0d9161] transition-colors duration-300 flex items-center">
-          Contact
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-4 w-4 ml-2"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M9 5l7 7-7 7"
-            />
-          </svg>
-        </button>
+        <NavLink to="/contact" className="w-full">
+          <button className="px-6 py-2 rounded-[12px] border-t-[1.5px] border-r-[1.5px] border-l-[1.5px] border-b-[4px] border-[#0d9161] bg-[#11B67A] text-white font-medium hover:bg-[#0d9161] transition-colors duration-300 flex items-center cursor-pointer justify-center ">
+            Contact
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-4 w-4 ml-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+        </NavLink>
       </div>
 
       {/* Mobile menu button */}
       <div className="md:hidden flex items-center">
-        <button
-          className="text-white focus:outline-none"
-          onClick={toggleMenu}
-        >
+        <button className="text-white focus:outline-none" onClick={toggleMenu}>
           {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>
       </div>
@@ -106,28 +99,30 @@ function Navbar() {
                 </li>
               ))}
             </ul>
-            
+
             <div className="flex flex-col gap-4 mt-4">
               <button className="w-full px-6 py-2 rounded-[12px] border border-white/20 border-b-4 font-medium text-white bg-transparent hover:bg-[#0d9161] transition-colors duration-300 text-center">
                 Join
               </button>
-              <button className="w-full px-6 py-2 rounded-[12px] border-t-[1.5px] border-r-[1.5px] border-l-[1.5px] border-b-[4px] border-[#0d9161] bg-[#11B67A] text-white font-medium hover:bg-[#0d9161] transition-colors duration-300 flex items-center justify-center">
-                Contact
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 ml-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </button>
+              <NavLink to="/contact" className="w-full" onClick={toggleMenu}>
+                <button className="w-full px-6 py-2 rounded-[12px] border-t-[1.5px] border-r-[1.5px] border-l-[1.5px] border-b-[4px] border-[#0d9161] bg-[#11B67A] text-white font-medium hover:bg-[#0d9161] transition-colors duration-300 flex items-center justify-center">
+                  Contact
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4 ml-2"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </button>
+              </NavLink>
             </div>
           </div>
         </div>

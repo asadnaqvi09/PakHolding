@@ -27,7 +27,7 @@ const HeroSection = () => {
             insights and exceptional execution.
           </p>
           <div className="hero-mobile-buttons">
-            <button className="hero-button primary-button">
+            <button className="hero-button primary-button hover:text-white" >
               View Projects
             </button>
             <button className="hero-button secondary-button">

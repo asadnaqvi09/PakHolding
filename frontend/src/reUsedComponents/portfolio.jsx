@@ -96,8 +96,8 @@ const Portfolio = ({ darkMode = true }) => {
         {/* View All Button */}
         <div className="mt-12 text-center">
           <Link 
-            to="/" 
-            className={`inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm ${darkMode ? 'bg-white text-gray-900 hover:bg-gray-100' : 'bg-gray-900 text-white hover:bg-gray-800'}`}
+            to="/services" 
+            className={`inline-flex items-center px-6 py-3 border border-transparent text-base font-medium cursor-pointer rounded-md shadow-sm ${darkMode ? 'bg-white text-gray-900 hover:bg-gray-100' : 'bg-gray-900 text-white hover:bg-gray-800'}`}
           >
             View All
           </Link>

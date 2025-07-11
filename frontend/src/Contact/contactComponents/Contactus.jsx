@@ -1,6 +1,6 @@
 import React from "react";
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
-import "../../Styles/Contact/Contactus.css"; // Import your CSS file for styling
+import "../../Styles/Contact/Contactus.css";
 
 function Contactus() {
   return (
@@ -23,7 +23,7 @@ function Contactus() {
           <p className="contact-card-text">
             Reach out to us via email for inquiries or support.
           </p>
-          <a href="mailto:hello@relume.io" className="contact-link">
+          <a href="mailto:hello@relume.io" className="contact-link underline-hover">
             hello@relume.io
           </a>
         </div>
@@ -37,7 +37,7 @@ function Contactus() {
           <p className="contact-card-text">
             Call us for immediate assistance or questions.
           </p>
-          <a href="tel:+15551234567" className="contact-link">
+          <a href="tel:+15551234567" className="contact-link underline-hover">
             +1 (555) 123-4567
           </a>
         </div>
@@ -51,11 +51,9 @@ function Contactus() {
           <p className="contact-card-text">
             Visit us at our headquarters for personalized service.
           </p>
-          <address className="contact-address">
-            123 Sample St.<br />
-            Sydney NSW 2000<br />
-            AU
-          </address>
+          <div className="contact-link underline-hover">
+            123 Sample St, Sydney NSW 2000 AU
+          </div>
         </div>
       </div>
     </div>
