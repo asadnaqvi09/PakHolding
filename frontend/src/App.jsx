@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import Home from './Home/Home';
 import About from './About/About';
-import Services from './Service/Services';
+import Services from './Service/services';
 import Contact from './Contact/contact';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './reUsedComponents/Navbar';
